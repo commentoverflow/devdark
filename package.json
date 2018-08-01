@@ -5,7 +5,7 @@
     "engines": {
         "ghost": ">=1.2.0"
     },
-    "license": "MIT",
+    "license": "GNUGPLv3",
     "author": {
         "name": "Christopher Amland",
         "email": "catcherinthetry@gmail.com",
