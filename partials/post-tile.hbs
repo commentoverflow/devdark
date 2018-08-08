@@ -1,0 +1,30 @@
+<article  class="{{post_class}}">
+<div class="post-tile-decoration"></div>
+<div class="post-tile-outer">
+    <div class="post-tile">
+        <header class="post-header">
+            <h2><a href="{{url}}" class="post-title">{{{title}}}</a></h2>
+        </header>
+
+        <section class="post-excerpt">
+            <p>{{excerpt words="30"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+        </section>
+        <footer class="post-card-meta">
+
+                <ul class="author-list" style="list-style-type:none">
+                {{#foreach authors}}
+                    <li class="author-list-item">
+                        <div class="author-name-tooltip">
+                            /* {{name}} */
+                            {{#if profile_image}}
+                                <a href="{{url}}"><img class="author-profile-image" src="{{profile_image}}" alt="{{name}}" /></a>
+                            {{/if}}
+                        </div>                    
+                    </li>
+                {{/foreach}}
+                </ul>
+
+            </footer>
+    </div>
+</div>
+</article>
